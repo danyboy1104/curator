@@ -15,5 +15,3 @@ COPY --from=builder build/exe.linux-x86_64-3.7 /curator/
 
 USER nobody:nobody
 ENV LD_LIBRARY_PATH /curator/lib:$LD_LIBRARY_PATH
-ENTRYPOINT ["/curator/curator"]
-
